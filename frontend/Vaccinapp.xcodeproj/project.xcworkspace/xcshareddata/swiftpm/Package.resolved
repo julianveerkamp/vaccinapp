@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "asn1decoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/filom/ASN1Decoder",
+      "state" : {
+        "revision" : "65953a42a0f039f53c73e48fd88c02809f7db607",
+        "version" : "1.8.0"
+      }
+    },
+    {
+      "identity" : "base45-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ehn-dcc-development/base45-swift",
+      "state" : {
+        "revision" : "c1db97d793d02a1c3d56d50a738c8fd8c34372f8",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "codescanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twostraws/CodeScanner",
+      "state" : {
+        "revision" : "c27a66149b7483fe42e2ec6aad61d5c3fffe522d",
+        "version" : "2.1.1"
+      }
+    },
+    {
+      "identity" : "swiftcbor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/unrelentingtech/SwiftCBOR",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4907e8bb1e09f1aaf3cff68587221763871f91b9"
+      }
+    }
+  ],
+  "version" : 2
+}

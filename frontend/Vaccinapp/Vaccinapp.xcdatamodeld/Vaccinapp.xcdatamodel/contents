@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DefaultPass" representedClassName="DefaultPass" syncable="YES">
+        <relationship name="pass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VaccinationPass" inverseName="selected" inverseEntity="VaccinationPass"/>
+    </entity>
+    <entity name="DiseaseTarget" representedClassName="DiseaseTarget" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="recommendation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recommendation" inverseName="target" inverseEntity="Recommendation"/>
+        <relationship name="vaccinations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vaccination" inverseName="target" inverseEntity="Vaccination"/>
+        <relationship name="vaccines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vaccine" inverseName="target" inverseEntity="Vaccine"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Recommendation" representedClassName="Recommendation" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="countries" optional="YES" attributeType="Transformable" customClassName="Array&lt;String&gt;"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DiseaseTarget" inverseName="recommendation" inverseEntity="DiseaseTarget"/>
+    </entity>
+    <entity name="Vaccination" representedClassName="Vaccination" syncable="YES">
+        <attribute name="certificates" optional="YES" attributeType="Binary" customClassName="[CBORWebToken]"/>
+        <attribute name="passName" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="valid" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="pass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VaccinationPass" inverseName="vaccines" inverseEntity="VaccinationPass"/>
+        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DiseaseTarget" inverseName="vaccinations" inverseEntity="DiseaseTarget"/>
+        <relationship name="vaccine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vaccine" inverseName="vaccination" inverseEntity="Vaccine"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="target"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="VaccinationPass" representedClassName="VaccinationPass" syncable="YES">
+        <attribute name="dob" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="selected" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DefaultPass" inverseName="pass" inverseEntity="DefaultPass"/>
+        <relationship name="vaccines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vaccination" inverseName="pass" inverseEntity="Vaccination"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Vaccine" representedClassName="Vaccine" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DiseaseTarget" inverseName="vaccines" inverseEntity="DiseaseTarget"/>
+        <relationship name="vaccination" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vaccination" inverseName="vaccine" inverseEntity="Vaccination"/>
+    </entity>
+    <elements>
+        <element name="DefaultPass" positionX="268.32421875" positionY="32.29296875" width="128" height="44"/>
+        <element name="DiseaseTarget" positionX="-243.83203125" positionY="162.2421875" width="128" height="119"/>
+        <element name="Recommendation" positionX="-396.6796875" positionY="-30.2421875" width="128" height="118"/>
+        <element name="Vaccination" positionX="-38.4921875" positionY="134.41796875" width="128" height="134"/>
+        <element name="VaccinationPass" positionX="129.75" positionY="213.98828125" width="128" height="133"/>
+        <element name="Vaccine" positionX="-189" positionY="126" width="128" height="104"/>
+    </elements>
+</model>

@@ -1,0 +1,68 @@
+service: vaccinapp-backend
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:DescribeTable
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource:
+            - "Fn::GetAtt": [ vaccineTable, Arn ]
+
+functions:
+  recommend:
+    handler: handler.recommend
+    events:
+      - httpApi:
+          path: /recommend/{country}
+          method: get
+  seed:
+    handler: handler.seed
+    events:
+      - httpApi:
+          path: /seed
+          method: get
+  update:
+    handler: handler.update
+    events:
+      - httpApi:
+          path: /update
+          method: get
+
+resources:
+  Resources:
+    vaccineTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: vaccineTable
+        AttributeDefinitions:
+          - AttributeName: targetID
+            AttributeType: S
+          - AttributeName: type
+            AttributeType: S
+        KeySchema:
+          - AttributeName: targetID
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        GlobalSecondaryIndexes:
+          - IndexName: TypeIndex
+            KeySchema:
+              - AttributeName: type
+                KeyType: HASH
+            Projection:
+              ProjectionType: 'ALL'
+            ProvisionedThroughput:
+              ReadCapacityUnits: 1
+              WriteCapacityUnits: 1

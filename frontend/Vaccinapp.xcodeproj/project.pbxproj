@@ -1,0 +1,1221 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2B631B2812B2110090DA2A /* dto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B631A2812B2110090DA2A /* dto.swift */; };
+		0C2B631E2816B0560090DA2A /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 0C2B631D2816B0560090DA2A /* CodeScanner */; };
+		0C36054728080F350037C978 /* VaccinappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36054628080F350037C978 /* VaccinappApp.swift */; };
+		0C36054928080F350037C978 /* Recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36054828080F350037C978 /* Recommendations.swift */; };
+		0C36054B28080F380037C978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C36054A28080F380037C978 /* Assets.xcassets */; };
+		0C36054E28080F380037C978 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C36054D28080F380037C978 /* Preview Assets.xcassets */; };
+		0C36055028080F380037C978 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36054F28080F380037C978 /* Persistence.swift */; };
+		0C36055328080F380037C978 /* Vaccinapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C36055128080F380037C978 /* Vaccinapp.xcdatamodeld */; };
+		0C36055D28080F390037C978 /* VaccinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36055C28080F390037C978 /* VaccinappTests.swift */; };
+		0C36056728080F390037C978 /* VaccinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36056628080F390037C978 /* VaccinappUITests.swift */; };
+		0C36056928080F390037C978 /* VaccinappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36056828080F390037C978 /* VaccinappUITestsLaunchTests.swift */; };
+		0C38B319284F4EC20049F8C1 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C38B318284F4EC20049F8C1 /* Onboarding.swift */; };
+		0C3E8BD2284A56C600D13740 /* UpdateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E8BD1284A56C600D13740 /* UpdateResponse.swift */; };
+		0C3E8BD4284A570900D13740 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E8BD3284A570900D13740 /* UpdateService.swift */; };
+		0C3E8BD6284A571400D13740 /* UpdateEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E8BD5284A571400D13740 /* UpdateEndpoint.swift */; };
+		0C4E464C2840EA0D00547B34 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E464B2840EA0D00547B34 /* APIService.swift */; };
+		0C4E464E2840EA3400547B34 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E464D2840EA3400547B34 /* APISession.swift */; };
+		0C4E46512840EA5E00547B34 /* RecommendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E46502840EA5E00547B34 /* RecommendationsResponse.swift */; };
+		0C4E46532840EA6E00547B34 /* RecommendationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E46522840EA6E00547B34 /* RecommendationsService.swift */; };
+		0C4E46552840EA7600547B34 /* RecommendationsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E46542840EA7600547B34 /* RecommendationsEndpoint.swift */; };
+		0C4E46572840EC5900547B34 /* FormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E46562840EC5900547B34 /* FormatterExtensions.swift */; };
+		0C4E46592844B5E600547B34 /* Recommendation+Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E46582844B5E600547B34 /* Recommendation+Wrappers.swift */; };
+		0C4E46652844CBEA00547B34 /* Vaccination+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E46642844CBEA00547B34 /* Vaccination+CoreDataProperties.swift */; };
+		0C65BD302871CA65003408F2 /* RecommendationsNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65BD2F2871CA65003408F2 /* RecommendationsNetworkController.swift */; };
+		0C91948A285F144500B6D60D /* Porter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C919489285F144500B6D60D /* Porter.swift */; };
+		0C91948C28631A7900B6D60D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91948B28631A7900B6D60D /* NetworkingTests.swift */; };
+		0C91948E28631BCB00B6D60D /* UpdateNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91948D28631BCB00B6D60D /* UpdateNetworkController.swift */; };
+		0C9194922863250000B6D60D /* DiseaseTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9194912863250000B6D60D /* DiseaseTargetTests.swift */; };
+		0C9AD80D284CB894007A8866 /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9AD80C284CB894007A8866 /* NSPredicateExtension.swift */; };
+		0C9AD810284CE4BD007A8866 /* Vaccine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9AD80E284CE4BD007A8866 /* Vaccine+CoreDataClass.swift */; };
+		0C9AD811284CE4BD007A8866 /* Vaccine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9AD80F284CE4BD007A8866 /* Vaccine+CoreDataProperties.swift */; };
+		0C9BBFE3287ECD2D003F5075 /* CertificatePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BBFE2287ECD2D003F5075 /* CertificatePreview.swift */; };
+		0C9BBFE5287ECD88003F5075 /* Persistence+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BBFE4287ECD88003F5075 /* Persistence+Methods.swift */; };
+		0C9BBFE8287ECDD4003F5075 /* Licenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BBFE7287ECDD4003F5075 /* Licenses.swift */; };
+		0C9BBFEA287ECDE7003F5075 /* PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BBFE9287ECDE7003F5075 /* PrivacyPolicy.swift */; };
+		0C9BBFEC287ECE34003F5075 /* PassDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BBFEB287ECE34003F5075 /* PassDetail.swift */; };
+		0C9BBFEE287ECE4E003F5075 /* AddPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BBFED287ECE4E003F5075 /* AddPass.swift */; };
+		0C9F46BB281FD7CF00AD2664 /* AddVaccination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F46BA281FD7CF00AD2664 /* AddVaccination.swift */; };
+		0C9F46BD281FD7E200AD2664 /* VaccinationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F46BC281FD7E200AD2664 /* VaccinationDetail.swift */; };
+		0C9F46BF281FD7F100AD2664 /* VaccinationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F46BE281FD7F100AD2664 /* VaccinationList.swift */; };
+		0CA69CB628252DB3003711EC /* Recommendation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CAE28252DB3003711EC /* Recommendation+CoreDataClass.swift */; };
+		0CA69CB728252DB3003711EC /* Recommendation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CAF28252DB3003711EC /* Recommendation+CoreDataProperties.swift */; };
+		0CA69CBC28252DB3003711EC /* DiseaseTarget+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CB428252DB3003711EC /* DiseaseTarget+CoreDataClass.swift */; };
+		0CA69CBD28252DB3003711EC /* DiseaseTarget+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CB528252DB3003711EC /* DiseaseTarget+CoreDataProperties.swift */; };
+		0CA69CC128252EE6003711EC /* Vaccination+Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CC028252EE6003711EC /* Vaccination+Wrappers.swift */; };
+		0CA69CCC28256482003711EC /* Vaccination+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CCA28256482003711EC /* Vaccination+CoreDataClass.swift */; };
+		0CA69CCF282A4FBC003711EC /* PassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CCE282A4FBC003711EC /* PassView.swift */; };
+		0CA69CD1282A582F003711EC /* VaccinationPass+Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CD0282A582F003711EC /* VaccinationPass+Wrappers.swift */; };
+		0CA69CD6282A5D53003711EC /* VaccinationPass+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CD2282A5D53003711EC /* VaccinationPass+CoreDataClass.swift */; };
+		0CA69CD7282A5D53003711EC /* VaccinationPass+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CD3282A5D53003711EC /* VaccinationPass+CoreDataProperties.swift */; };
+		0CA69CD8282A5D53003711EC /* DefaultPass+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CD4282A5D53003711EC /* DefaultPass+CoreDataClass.swift */; };
+		0CA69CD9282A5D53003711EC /* DefaultPass+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CD5282A5D53003711EC /* DefaultPass+CoreDataProperties.swift */; };
+		0CA69CDF282A613A003711EC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CDE282A613A003711EC /* Settings.swift */; };
+		0CA69CE1282A62BA003711EC /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CE0282A62BA003711EC /* Export.swift */; };
+		0CA69CE3282A6A97003711EC /* PassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CE2282A6A97003711EC /* PassList.swift */; };
+		0CA69CE5282A6AC2003711EC /* RecommendationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CE4282A6AC2003711EC /* RecommendationSettings.swift */; };
+		0CA69CE7282E4290003711EC /* String+QRCodeGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CE6282E4290003711EC /* String+QRCodeGeneration.swift */; };
+		0CA69CEB282E4483003711EC /* ExtendedCBORWebToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CEA282E4483003711EC /* ExtendedCBORWebToken.swift */; };
+		0CA69CED282E44AD003711EC /* QRCodeScanable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CEC282E44AD003711EC /* QRCodeScanable.swift */; };
+		0CA69CEF282E772D003711EC /* DiseaseTarget+Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CEE282E772C003711EC /* DiseaseTarget+Wrappers.swift */; };
+		0CA69CF1282E7AD8003711EC /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA69CF0282E7AD8003711EC /* DataExtension.swift */; };
+		0CA92AE72822AA82006A088B /* ASN1Decoder in Frameworks */ = {isa = PBXBuildFile; productRef = 0CA92AE62822AA82006A088B /* ASN1Decoder */; };
+		0CAD8707284CEA5400B5A731 /* Vaccine+Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD8706284CEA5400B5A731 /* Vaccine+Wrappers.swift */; };
+		0CDDDA3F2822AD3C00A6DF6B /* CompressionAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA3B2822AD3C00A6DF6B /* CompressionAlgorithm.swift */; };
+		0CDDDA402822AD3C00A6DF6B /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA3C2822AD3C00A6DF6B /* Compression.swift */; };
+		0CDDDA412822AD3C00A6DF6B /* DataUnsafeBytesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA3D2822AD3C00A6DF6B /* DataUnsafeBytesExtension.swift */; };
+		0CDDDA492822AD4600A6DF6B /* ECDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA422822AD4600A6DF6B /* ECDSA.swift */; };
+		0CDDDA4A2822AD4600A6DF6B /* HCert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA432822AD4600A6DF6B /* HCert.swift */; };
+		0CDDDA4B2822AD4600A6DF6B /* CoseSign1Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA442822AD4600A6DF6B /* CoseSign1Message.swift */; };
+		0CDDDA4E2822AD4600A6DF6B /* Base45Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA472822AD4600A6DF6B /* Base45Coder.swift */; };
+		0CDDDA522822ADC400A6DF6B /* TrustList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA512822ADC400A6DF6B /* TrustList.swift */; };
+		0CDDDA542822ADCC00A6DF6B /* CBORWebToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA532822ADCC00A6DF6B /* CBORWebToken.swift */; };
+		0CDDDA562822ADDB00A6DF6B /* TrustCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA552822ADDB00A6DF6B /* TrustCertificate.swift */; };
+		0CDDDA592822AE0E00A6DF6B /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA582822AE0E00A6DF6B /* ErrorExtension.swift */; };
+		0CDDDA5B2822AE2C00A6DF6B /* HealthCertificateClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA5A2822AE2C00A6DF6B /* HealthCertificateClaim.swift */; };
+		0CDDDA632822AF0800A6DF6B /* KeyedDecodingContainer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA622822AF0800A6DF6B /* KeyedDecodingContainer+.swift */; };
+		0CDDDA652822AF2300A6DF6B /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA642822AF2300A6DF6B /* DictionaryExtension.swift */; };
+		0CDDDA672822AF2B00A6DF6B /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA662822AF2B00A6DF6B /* ArrayExtension.swift */; };
+		0CDDDA692822AF4E00A6DF6B /* DigitalGreenCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA682822AF4E00A6DF6B /* DigitalGreenCertificate.swift */; };
+		0CDDDA6B2823B09E00A6DF6B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA6A2823B09E00A6DF6B /* Name.swift */; };
+		0CDDDA6D2823B13C00A6DF6B /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA6C2823B13C00A6DF6B /* Scanner.swift */; };
+		0CDDDA6F2823B5D700A6DF6B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA6E2823B5D700A6DF6B /* Test.swift */; };
+		0CDDDA712823B5DD00A6DF6B /* Vaccination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA702823B5DC00A6DF6B /* Vaccination.swift */; };
+		0CDDDA732823B5E200A6DF6B /* Recovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA722823B5E200A6DF6B /* Recovery.swift */; };
+		0CDDDA762823B65200A6DF6B /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA752823B65200A6DF6B /* DateUtils.swift */; };
+		0CDDDA792823B66E00A6DF6B /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA782823B66E00A6DF6B /* ApplicationError.swift */; };
+		0CDDDA7B2823B6B600A6DF6B /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA7A2823B6B600A6DF6B /* BundleExtension.swift */; };
+		0CDDDA7D2823B6CC00A6DF6B /* String+Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA7C2823B6CC00A6DF6B /* String+Prefix.swift */; };
+		0CDDDA7F2823B6E600A6DF6B /* MedicalProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA7E2823B6E500A6DF6B /* MedicalProduct.swift */; };
+		0CDDDA812823B73A00A6DF6B /* Data+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDDA802823B73A00A6DF6B /* Data+Hashing.swift */; };
+		0CF741342816C60700DA5E80 /* base45-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 0CF741332816C60700DA5E80 /* base45-swift */; };
+		0CF741392816EFA400DA5E80 /* SwiftCBOR in Frameworks */ = {isa = PBXBuildFile; productRef = 0CF741382816EFA400DA5E80 /* SwiftCBOR */; };
+		0CF93375284CAA6800FCE5DB /* DefaultPass+Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF93374284CAA6800FCE5DB /* DefaultPass+Wrappers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C36055928080F390037C978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C36053B28080F350037C978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C36054228080F350037C978;
+			remoteInfo = Vaccinapp;
+		};
+		0C36056328080F390037C978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C36053B28080F350037C978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C36054228080F350037C978;
+			remoteInfo = Vaccinapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C2B631A2812B2110090DA2A /* dto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dto.swift; sourceTree = "<group>"; };
+		0C2B631F2816B30D0090DA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0C36054328080F350037C978 /* Vaccinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vaccinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C36054628080F350037C978 /* VaccinappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinappApp.swift; sourceTree = "<group>"; };
+		0C36054828080F350037C978 /* Recommendations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendations.swift; sourceTree = "<group>"; };
+		0C36054A28080F380037C978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C36054D28080F380037C978 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C36054F28080F380037C978 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0C36055228080F380037C978 /* Vaccinapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vaccinapp.xcdatamodel; sourceTree = "<group>"; };
+		0C36055828080F390037C978 /* VaccinappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaccinappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C36055C28080F390037C978 /* VaccinappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinappTests.swift; sourceTree = "<group>"; };
+		0C36056228080F390037C978 /* VaccinappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaccinappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C36056628080F390037C978 /* VaccinappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinappUITests.swift; sourceTree = "<group>"; };
+		0C36056828080F390037C978 /* VaccinappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C38B318284F4EC20049F8C1 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		0C3E8BD1284A56C600D13740 /* UpdateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateResponse.swift; sourceTree = "<group>"; };
+		0C3E8BD3284A570900D13740 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
+		0C3E8BD5284A571400D13740 /* UpdateEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEndpoint.swift; sourceTree = "<group>"; };
+		0C4E464B2840EA0D00547B34 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		0C4E464D2840EA3400547B34 /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		0C4E46502840EA5E00547B34 /* RecommendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsResponse.swift; sourceTree = "<group>"; };
+		0C4E46522840EA6E00547B34 /* RecommendationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsService.swift; sourceTree = "<group>"; };
+		0C4E46542840EA7600547B34 /* RecommendationsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsEndpoint.swift; sourceTree = "<group>"; };
+		0C4E46562840EC5900547B34 /* FormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterExtensions.swift; sourceTree = "<group>"; };
+		0C4E46582844B5E600547B34 /* Recommendation+Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recommendation+Wrappers.swift"; sourceTree = "<group>"; };
+		0C4E46642844CBEA00547B34 /* Vaccination+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Vaccination+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C65BD2F2871CA65003408F2 /* RecommendationsNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsNetworkController.swift; sourceTree = "<group>"; };
+		0C919489285F144500B6D60D /* Porter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Porter.swift; path = Vaccinapp/Views/Settings/Export/Porter.swift; sourceTree = SOURCE_ROOT; };
+		0C91948B28631A7900B6D60D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		0C91948D28631BCB00B6D60D /* UpdateNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNetworkController.swift; sourceTree = "<group>"; };
+		0C9194912863250000B6D60D /* DiseaseTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseTargetTests.swift; sourceTree = "<group>"; };
+		0C9AD80C284CB894007A8866 /* NSPredicateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPredicateExtension.swift; sourceTree = "<group>"; };
+		0C9AD80E284CE4BD007A8866 /* Vaccine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vaccine+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C9AD80F284CE4BD007A8866 /* Vaccine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vaccine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C9BBFE2287ECD2D003F5075 /* CertificatePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatePreview.swift; sourceTree = "<group>"; };
+		0C9BBFE4287ECD88003F5075 /* Persistence+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persistence+Methods.swift"; sourceTree = "<group>"; };
+		0C9BBFE7287ECDD4003F5075 /* Licenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licenses.swift; sourceTree = "<group>"; };
+		0C9BBFE9287ECDE7003F5075 /* PrivacyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicy.swift; sourceTree = "<group>"; };
+		0C9BBFEB287ECE34003F5075 /* PassDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDetail.swift; sourceTree = "<group>"; };
+		0C9BBFED287ECE4E003F5075 /* AddPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPass.swift; sourceTree = "<group>"; };
+		0C9F46BA281FD7CF00AD2664 /* AddVaccination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVaccination.swift; sourceTree = "<group>"; };
+		0C9F46BC281FD7E200AD2664 /* VaccinationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationDetail.swift; sourceTree = "<group>"; };
+		0C9F46BE281FD7F100AD2664 /* VaccinationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationList.swift; sourceTree = "<group>"; };
+		0CA69CAE28252DB3003711EC /* Recommendation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recommendation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CA69CAF28252DB3003711EC /* Recommendation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recommendation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CA69CB428252DB3003711EC /* DiseaseTarget+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiseaseTarget+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CA69CB528252DB3003711EC /* DiseaseTarget+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiseaseTarget+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CA69CC028252EE6003711EC /* Vaccination+Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vaccination+Wrappers.swift"; sourceTree = "<group>"; };
+		0CA69CCA28256482003711EC /* Vaccination+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vaccination+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CA69CCE282A4FBC003711EC /* PassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassView.swift; sourceTree = "<group>"; };
+		0CA69CD0282A582F003711EC /* VaccinationPass+Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VaccinationPass+Wrappers.swift"; sourceTree = "<group>"; };
+		0CA69CD2282A5D53003711EC /* VaccinationPass+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VaccinationPass+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CA69CD3282A5D53003711EC /* VaccinationPass+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VaccinationPass+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CA69CD4282A5D53003711EC /* DefaultPass+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultPass+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CA69CD5282A5D53003711EC /* DefaultPass+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultPass+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CA69CDE282A613A003711EC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0CA69CE0282A62BA003711EC /* Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Export.swift; sourceTree = "<group>"; };
+		0CA69CE2282A6A97003711EC /* PassList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassList.swift; sourceTree = "<group>"; };
+		0CA69CE4282A6AC2003711EC /* RecommendationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationSettings.swift; sourceTree = "<group>"; };
+		0CA69CE6282E4290003711EC /* String+QRCodeGeneration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+QRCodeGeneration.swift"; sourceTree = "<group>"; };
+		0CA69CEA282E4483003711EC /* ExtendedCBORWebToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedCBORWebToken.swift; sourceTree = "<group>"; };
+		0CA69CEC282E44AD003711EC /* QRCodeScanable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanable.swift; sourceTree = "<group>"; };
+		0CA69CEE282E772C003711EC /* DiseaseTarget+Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiseaseTarget+Wrappers.swift"; sourceTree = "<group>"; };
+		0CA69CF0282E7AD8003711EC /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		0CAD8706284CEA5400B5A731 /* Vaccine+Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vaccine+Wrappers.swift"; sourceTree = "<group>"; };
+		0CDDDA3B2822AD3C00A6DF6B /* CompressionAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressionAlgorithm.swift; sourceTree = "<group>"; };
+		0CDDDA3C2822AD3C00A6DF6B /* Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
+		0CDDDA3D2822AD3C00A6DF6B /* DataUnsafeBytesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUnsafeBytesExtension.swift; sourceTree = "<group>"; };
+		0CDDDA422822AD4600A6DF6B /* ECDSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECDSA.swift; sourceTree = "<group>"; };
+		0CDDDA432822AD4600A6DF6B /* HCert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCert.swift; sourceTree = "<group>"; };
+		0CDDDA442822AD4600A6DF6B /* CoseSign1Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoseSign1Message.swift; sourceTree = "<group>"; };
+		0CDDDA472822AD4600A6DF6B /* Base45Coder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base45Coder.swift; sourceTree = "<group>"; };
+		0CDDDA512822ADC400A6DF6B /* TrustList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrustList.swift; sourceTree = "<group>"; };
+		0CDDDA532822ADCC00A6DF6B /* CBORWebToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBORWebToken.swift; sourceTree = "<group>"; };
+		0CDDDA552822ADDB00A6DF6B /* TrustCertificate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrustCertificate.swift; sourceTree = "<group>"; };
+		0CDDDA582822AE0E00A6DF6B /* ErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
+		0CDDDA5A2822AE2C00A6DF6B /* HealthCertificateClaim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthCertificateClaim.swift; sourceTree = "<group>"; };
+		0CDDDA622822AF0800A6DF6B /* KeyedDecodingContainer+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+.swift"; sourceTree = "<group>"; };
+		0CDDDA642822AF2300A6DF6B /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		0CDDDA662822AF2B00A6DF6B /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		0CDDDA682822AF4E00A6DF6B /* DigitalGreenCertificate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalGreenCertificate.swift; sourceTree = "<group>"; };
+		0CDDDA6A2823B09E00A6DF6B /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		0CDDDA6C2823B13C00A6DF6B /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		0CDDDA6E2823B5D700A6DF6B /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		0CDDDA702823B5DC00A6DF6B /* Vaccination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vaccination.swift; sourceTree = "<group>"; };
+		0CDDDA722823B5E200A6DF6B /* Recovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recovery.swift; sourceTree = "<group>"; };
+		0CDDDA752823B65200A6DF6B /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		0CDDDA782823B66E00A6DF6B /* ApplicationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		0CDDDA7A2823B6B600A6DF6B /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		0CDDDA7C2823B6CC00A6DF6B /* String+Prefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Prefix.swift"; sourceTree = "<group>"; };
+		0CDDDA7E2823B6E500A6DF6B /* MedicalProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalProduct.swift; sourceTree = "<group>"; };
+		0CDDDA802823B73A00A6DF6B /* Data+Hashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Hashing.swift"; sourceTree = "<group>"; };
+		0CF93374284CAA6800FCE5DB /* DefaultPass+Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultPass+Wrappers.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C36054028080F350037C978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA92AE72822AA82006A088B /* ASN1Decoder in Frameworks */,
+				0CF741342816C60700DA5E80 /* base45-swift in Frameworks */,
+				0C2B631E2816B0560090DA2A /* CodeScanner in Frameworks */,
+				0CF741392816EFA400DA5E80 /* SwiftCBOR in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C36055528080F390037C978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C36055F28080F390037C978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C2B63182812B1F80090DA2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C9AD812284CE4C1007A8866 /* Vaccine */,
+				0CA69CDA282A5D6C003711EC /* DefaultPass */,
+				0CA69CC528252F0D003711EC /* DiseaseTarget */,
+				0CA69CC428252F01003711EC /* VaccinationPass */,
+				0CA69CC328252EF6003711EC /* Recommendation */,
+				0CA69CC228252EEA003711EC /* Vaccination */,
+				0C2B631A2812B2110090DA2A /* dto.swift */,
+				0C36054F28080F380037C978 /* Persistence.swift */,
+				0C9BBFE4287ECD88003F5075 /* Persistence+Methods.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C2B63192812B2000090DA2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CDD282A6128003711EC /* Settings */,
+				0CA69CDC282A6120003711EC /* Recommendations */,
+				0CA69CDB282A6102003711EC /* PassView */,
+				0C38B318284F4EC20049F8C1 /* Onboarding.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C36053A28080F350037C978 = {
+			isa = PBXGroup;
+			children = (
+				0C36054528080F350037C978 /* Vaccinapp */,
+				0C36055B28080F390037C978 /* VaccinappTests */,
+				0C36056528080F390037C978 /* VaccinappUITests */,
+				0C36054428080F350037C978 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C36054428080F350037C978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C36054328080F350037C978 /* Vaccinapp.app */,
+				0C36055828080F390037C978 /* VaccinappTests.xctest */,
+				0C36056228080F390037C978 /* VaccinappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C36054528080F350037C978 /* Vaccinapp */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B631F2816B30D0090DA2A /* Info.plist */,
+				0CA92AE02822A7F1006A088B /* External */,
+				0C9F46B9281FD7A700AD2664 /* Extensions */,
+				0C2B63182812B1F80090DA2A /* Models */,
+				0C4E464A2840E9F400547B34 /* Networking */,
+				0C2B63192812B2000090DA2A /* Views */,
+				0C36054628080F350037C978 /* VaccinappApp.swift */,
+				0C36054A28080F380037C978 /* Assets.xcassets */,
+				0C36055128080F380037C978 /* Vaccinapp.xcdatamodeld */,
+				0C36054C28080F380037C978 /* Preview Content */,
+			);
+			path = Vaccinapp;
+			sourceTree = "<group>";
+		};
+		0C36054C28080F380037C978 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0C36054D28080F380037C978 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C36055B28080F390037C978 /* VaccinappTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C36055C28080F390037C978 /* VaccinappTests.swift */,
+				0C91948B28631A7900B6D60D /* NetworkingTests.swift */,
+				0C9194912863250000B6D60D /* DiseaseTargetTests.swift */,
+			);
+			path = VaccinappTests;
+			sourceTree = "<group>";
+		};
+		0C36056528080F390037C978 /* VaccinappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C36056628080F390037C978 /* VaccinappUITests.swift */,
+				0C36056828080F390037C978 /* VaccinappUITestsLaunchTests.swift */,
+			);
+			path = VaccinappUITests;
+			sourceTree = "<group>";
+		};
+		0C3E8BD0284A563900D13740 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				0C91948D28631BCB00B6D60D /* UpdateNetworkController.swift */,
+				0C3E8BD1284A56C600D13740 /* UpdateResponse.swift */,
+				0C3E8BD3284A570900D13740 /* UpdateService.swift */,
+				0C3E8BD5284A571400D13740 /* UpdateEndpoint.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
+		0C4E464A2840E9F400547B34 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0C3E8BD0284A563900D13740 /* Update */,
+				0C4E464F2840EA4B00547B34 /* Recommendations */,
+				0C4E464B2840EA0D00547B34 /* APIService.swift */,
+				0C4E464D2840EA3400547B34 /* APISession.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0C4E464F2840EA4B00547B34 /* Recommendations */ = {
+			isa = PBXGroup;
+			children = (
+				0C4E46502840EA5E00547B34 /* RecommendationsResponse.swift */,
+				0C4E46522840EA6E00547B34 /* RecommendationsService.swift */,
+				0C4E46542840EA7600547B34 /* RecommendationsEndpoint.swift */,
+			);
+			path = Recommendations;
+			sourceTree = "<group>";
+		};
+		0C9AD812284CE4C1007A8866 /* Vaccine */ = {
+			isa = PBXGroup;
+			children = (
+				0C9AD80E284CE4BD007A8866 /* Vaccine+CoreDataClass.swift */,
+				0C9AD80F284CE4BD007A8866 /* Vaccine+CoreDataProperties.swift */,
+				0CAD8706284CEA5400B5A731 /* Vaccine+Wrappers.swift */,
+			);
+			path = Vaccine;
+			sourceTree = "<group>";
+		};
+		0C9BBFE1287ECCFD003F5075 /* VaccinationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0C9F46BC281FD7E200AD2664 /* VaccinationDetail.swift */,
+				0C9BBFE2287ECD2D003F5075 /* CertificatePreview.swift */,
+			);
+			path = VaccinationDetail;
+			sourceTree = "<group>";
+		};
+		0C9BBFE6287ECDC8003F5075 /* PassList */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CE2282A6A97003711EC /* PassList.swift */,
+				0C9BBFEB287ECE34003F5075 /* PassDetail.swift */,
+				0C9BBFED287ECE4E003F5075 /* AddPass.swift */,
+			);
+			path = PassList;
+			sourceTree = "<group>";
+		};
+		0C9F46B9281FD7A700AD2664 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CF0282E7AD8003711EC /* DataExtension.swift */,
+				0C4E46562840EC5900547B34 /* FormatterExtensions.swift */,
+				0C9AD80C284CB894007A8866 /* NSPredicateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0CA69CC228252EEA003711EC /* Vaccination */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CCA28256482003711EC /* Vaccination+CoreDataClass.swift */,
+				0C4E46642844CBEA00547B34 /* Vaccination+CoreDataProperties.swift */,
+				0CA69CC028252EE6003711EC /* Vaccination+Wrappers.swift */,
+			);
+			path = Vaccination;
+			sourceTree = "<group>";
+		};
+		0CA69CC328252EF6003711EC /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CAE28252DB3003711EC /* Recommendation+CoreDataClass.swift */,
+				0CA69CAF28252DB3003711EC /* Recommendation+CoreDataProperties.swift */,
+				0C4E46582844B5E600547B34 /* Recommendation+Wrappers.swift */,
+			);
+			path = Recommendation;
+			sourceTree = "<group>";
+		};
+		0CA69CC428252F01003711EC /* VaccinationPass */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CD2282A5D53003711EC /* VaccinationPass+CoreDataClass.swift */,
+				0CA69CD3282A5D53003711EC /* VaccinationPass+CoreDataProperties.swift */,
+				0CA69CD0282A582F003711EC /* VaccinationPass+Wrappers.swift */,
+			);
+			path = VaccinationPass;
+			sourceTree = "<group>";
+		};
+		0CA69CC528252F0D003711EC /* DiseaseTarget */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CB428252DB3003711EC /* DiseaseTarget+CoreDataClass.swift */,
+				0CA69CB528252DB3003711EC /* DiseaseTarget+CoreDataProperties.swift */,
+				0CA69CEE282E772C003711EC /* DiseaseTarget+Wrappers.swift */,
+			);
+			path = DiseaseTarget;
+			sourceTree = "<group>";
+		};
+		0CA69CDA282A5D6C003711EC /* DefaultPass */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CD4282A5D53003711EC /* DefaultPass+CoreDataClass.swift */,
+				0CA69CD5282A5D53003711EC /* DefaultPass+CoreDataProperties.swift */,
+				0CF93374284CAA6800FCE5DB /* DefaultPass+Wrappers.swift */,
+			);
+			path = DefaultPass;
+			sourceTree = "<group>";
+		};
+		0CA69CDB282A6102003711EC /* PassView */ = {
+			isa = PBXGroup;
+			children = (
+				0C9BBFE1287ECCFD003F5075 /* VaccinationDetail */,
+				0CE4C1C32870B12500C85518 /* AddVaccination */,
+				0CA69CCE282A4FBC003711EC /* PassView.swift */,
+				0C9F46BE281FD7F100AD2664 /* VaccinationList.swift */,
+			);
+			path = PassView;
+			sourceTree = "<group>";
+		};
+		0CA69CDC282A6120003711EC /* Recommendations */ = {
+			isa = PBXGroup;
+			children = (
+				0C36054828080F350037C978 /* Recommendations.swift */,
+				0C65BD2F2871CA65003408F2 /* RecommendationsNetworkController.swift */,
+			);
+			path = Recommendations;
+			sourceTree = "<group>";
+		};
+		0CA69CDD282A6128003711EC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0C9BBFE6287ECDC8003F5075 /* PassList */,
+				0CE4C1C22870B10C00C85518 /* Export */,
+				0CA69CDE282A613A003711EC /* Settings.swift */,
+				0CA69CE4282A6AC2003711EC /* RecommendationSettings.swift */,
+				0C9BBFE7287ECDD4003F5075 /* Licenses.swift */,
+				0C9BBFE9287ECDE7003F5075 /* PrivacyPolicy.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0CA92AE02822A7F1006A088B /* External */ = {
+			isa = PBXGroup;
+			children = (
+				0CDDDA772823B66400A6DF6B /* Utils */,
+				0CDDDA742823B64A00A6DF6B /* Formatter */,
+				0CDDDA572822AE0300A6DF6B /* Extensions */,
+				0CDDDA502822ADBA00A6DF6B /* Models */,
+				0CDDDA392822AD2E00A6DF6B /* Compression */,
+				0CDDDA382822AD2700A6DF6B /* Encoding */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		0CDDDA382822AD2700A6DF6B /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				0CDDDA472822AD4600A6DF6B /* Base45Coder.swift */,
+				0CDDDA442822AD4600A6DF6B /* CoseSign1Message.swift */,
+				0CDDDA422822AD4600A6DF6B /* ECDSA.swift */,
+				0CDDDA432822AD4600A6DF6B /* HCert.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		0CDDDA392822AD2E00A6DF6B /* Compression */ = {
+			isa = PBXGroup;
+			children = (
+				0CDDDA3C2822AD3C00A6DF6B /* Compression.swift */,
+				0CDDDA3B2822AD3C00A6DF6B /* CompressionAlgorithm.swift */,
+				0CDDDA3D2822AD3C00A6DF6B /* DataUnsafeBytesExtension.swift */,
+			);
+			path = Compression;
+			sourceTree = "<group>";
+		};
+		0CDDDA502822ADBA00A6DF6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CDDDA6A2823B09E00A6DF6B /* Name.swift */,
+				0CDDDA532822ADCC00A6DF6B /* CBORWebToken.swift */,
+				0CA69CEA282E4483003711EC /* ExtendedCBORWebToken.swift */,
+				0CDDDA5A2822AE2C00A6DF6B /* HealthCertificateClaim.swift */,
+				0CDDDA682822AF4E00A6DF6B /* DigitalGreenCertificate.swift */,
+				0CDDDA552822ADDB00A6DF6B /* TrustCertificate.swift */,
+				0CDDDA6E2823B5D700A6DF6B /* Test.swift */,
+				0CDDDA512822ADC400A6DF6B /* TrustList.swift */,
+				0CA69CEC282E44AD003711EC /* QRCodeScanable.swift */,
+				0CDDDA722823B5E200A6DF6B /* Recovery.swift */,
+				0CDDDA7E2823B6E500A6DF6B /* MedicalProduct.swift */,
+				0CDDDA702823B5DC00A6DF6B /* Vaccination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CDDDA572822AE0300A6DF6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0CDDDA622822AF0800A6DF6B /* KeyedDecodingContainer+.swift */,
+				0CDDDA642822AF2300A6DF6B /* DictionaryExtension.swift */,
+				0CDDDA662822AF2B00A6DF6B /* ArrayExtension.swift */,
+				0CDDDA7A2823B6B600A6DF6B /* BundleExtension.swift */,
+				0CDDDA582822AE0E00A6DF6B /* ErrorExtension.swift */,
+				0CDDDA7C2823B6CC00A6DF6B /* String+Prefix.swift */,
+				0CA69CE6282E4290003711EC /* String+QRCodeGeneration.swift */,
+				0CDDDA802823B73A00A6DF6B /* Data+Hashing.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0CDDDA742823B64A00A6DF6B /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				0CDDDA752823B65200A6DF6B /* DateUtils.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		0CDDDA772823B66400A6DF6B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0CDDDA782823B66E00A6DF6B /* ApplicationError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0CE4C1C22870B10C00C85518 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				0CA69CE0282A62BA003711EC /* Export.swift */,
+				0C919489285F144500B6D60D /* Porter.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		0CE4C1C32870B12500C85518 /* AddVaccination */ = {
+			isa = PBXGroup;
+			children = (
+				0CDDDA6C2823B13C00A6DF6B /* Scanner.swift */,
+				0C9F46BA281FD7CF00AD2664 /* AddVaccination.swift */,
+			);
+			path = AddVaccination;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C36054228080F350037C978 /* Vaccinapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C36056C28080F390037C978 /* Build configuration list for PBXNativeTarget "Vaccinapp" */;
+			buildPhases = (
+				0C36053F28080F350037C978 /* Sources */,
+				0C36054028080F350037C978 /* Frameworks */,
+				0C36054128080F350037C978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vaccinapp;
+			packageProductDependencies = (
+				0C2B631D2816B0560090DA2A /* CodeScanner */,
+				0CF741332816C60700DA5E80 /* base45-swift */,
+				0CF741382816EFA400DA5E80 /* SwiftCBOR */,
+				0CA92AE62822AA82006A088B /* ASN1Decoder */,
+			);
+			productName = Vaccinapp;
+			productReference = 0C36054328080F350037C978 /* Vaccinapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C36055728080F390037C978 /* VaccinappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C36056F28080F390037C978 /* Build configuration list for PBXNativeTarget "VaccinappTests" */;
+			buildPhases = (
+				0C36055428080F390037C978 /* Sources */,
+				0C36055528080F390037C978 /* Frameworks */,
+				0C36055628080F390037C978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C36055A28080F390037C978 /* PBXTargetDependency */,
+			);
+			name = VaccinappTests;
+			productName = VaccinappTests;
+			productReference = 0C36055828080F390037C978 /* VaccinappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C36056128080F390037C978 /* VaccinappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C36057228080F390037C978 /* Build configuration list for PBXNativeTarget "VaccinappUITests" */;
+			buildPhases = (
+				0C36055E28080F390037C978 /* Sources */,
+				0C36055F28080F390037C978 /* Frameworks */,
+				0C36056028080F390037C978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C36056428080F390037C978 /* PBXTargetDependency */,
+			);
+			name = VaccinappUITests;
+			productName = VaccinappUITests;
+			productReference = 0C36056228080F390037C978 /* VaccinappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C36053B28080F350037C978 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					0C36054228080F350037C978 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					0C36055728080F390037C978 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 0C36054228080F350037C978;
+					};
+					0C36056128080F390037C978 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 0C36054228080F350037C978;
+					};
+				};
+			};
+			buildConfigurationList = 0C36053E28080F350037C978 /* Build configuration list for PBXProject "Vaccinapp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C36053A28080F350037C978;
+			packageReferences = (
+				0C2B631C2816B0550090DA2A /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				0CF741322816C60700DA5E80 /* XCRemoteSwiftPackageReference "base45-swift" */,
+				0CF741372816EFA400DA5E80 /* XCRemoteSwiftPackageReference "SwiftCBOR" */,
+				0CA92AE52822AA82006A088B /* XCRemoteSwiftPackageReference "ASN1Decoder" */,
+			);
+			productRefGroup = 0C36054428080F350037C978 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C36054228080F350037C978 /* Vaccinapp */,
+				0C36055728080F390037C978 /* VaccinappTests */,
+				0C36056128080F390037C978 /* VaccinappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C36054128080F350037C978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C36054E28080F380037C978 /* Preview Assets.xcassets in Resources */,
+				0C36054B28080F380037C978 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C36055628080F390037C978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C36056028080F390037C978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C36053F28080F350037C978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9BBFE5287ECD88003F5075 /* Persistence+Methods.swift in Sources */,
+				0CA69CB628252DB3003711EC /* Recommendation+CoreDataClass.swift in Sources */,
+				0C3E8BD4284A570900D13740 /* UpdateService.swift in Sources */,
+				0C9AD810284CE4BD007A8866 /* Vaccine+CoreDataClass.swift in Sources */,
+				0C4E46552840EA7600547B34 /* RecommendationsEndpoint.swift in Sources */,
+				0C9BBFE3287ECD2D003F5075 /* CertificatePreview.swift in Sources */,
+				0C9BBFE8287ECDD4003F5075 /* Licenses.swift in Sources */,
+				0CDDDA812823B73A00A6DF6B /* Data+Hashing.swift in Sources */,
+				0CDDDA7F2823B6E600A6DF6B /* MedicalProduct.swift in Sources */,
+				0C36055028080F380037C978 /* Persistence.swift in Sources */,
+				0C2B631B2812B2110090DA2A /* dto.swift in Sources */,
+				0C4E464E2840EA3400547B34 /* APISession.swift in Sources */,
+				0CDDDA562822ADDB00A6DF6B /* TrustCertificate.swift in Sources */,
+				0CDDDA672822AF2B00A6DF6B /* ArrayExtension.swift in Sources */,
+				0CDDDA6D2823B13C00A6DF6B /* Scanner.swift in Sources */,
+				0CA69CD9282A5D53003711EC /* DefaultPass+CoreDataProperties.swift in Sources */,
+				0CA69CD1282A582F003711EC /* VaccinationPass+Wrappers.swift in Sources */,
+				0CDDDA5B2822AE2C00A6DF6B /* HealthCertificateClaim.swift in Sources */,
+				0C9AD80D284CB894007A8866 /* NSPredicateExtension.swift in Sources */,
+				0CDDDA522822ADC400A6DF6B /* TrustList.swift in Sources */,
+				0C3E8BD6284A571400D13740 /* UpdateEndpoint.swift in Sources */,
+				0C38B319284F4EC20049F8C1 /* Onboarding.swift in Sources */,
+				0CDDDA712823B5DD00A6DF6B /* Vaccination.swift in Sources */,
+				0CDDDA4B2822AD4600A6DF6B /* CoseSign1Message.swift in Sources */,
+				0CA69CB728252DB3003711EC /* Recommendation+CoreDataProperties.swift in Sources */,
+				0CDDDA762823B65200A6DF6B /* DateUtils.swift in Sources */,
+				0CDDDA692822AF4E00A6DF6B /* DigitalGreenCertificate.swift in Sources */,
+				0CDDDA542822ADCC00A6DF6B /* CBORWebToken.swift in Sources */,
+				0C91948A285F144500B6D60D /* Porter.swift in Sources */,
+				0CDDDA632822AF0800A6DF6B /* KeyedDecodingContainer+.swift in Sources */,
+				0CA69CEB282E4483003711EC /* ExtendedCBORWebToken.swift in Sources */,
+				0CAD8707284CEA5400B5A731 /* Vaccine+Wrappers.swift in Sources */,
+				0CA69CBC28252DB3003711EC /* DiseaseTarget+CoreDataClass.swift in Sources */,
+				0CDDDA652822AF2300A6DF6B /* DictionaryExtension.swift in Sources */,
+				0C4E46572840EC5900547B34 /* FormatterExtensions.swift in Sources */,
+				0CDDDA592822AE0E00A6DF6B /* ErrorExtension.swift in Sources */,
+				0CDDDA792823B66E00A6DF6B /* ApplicationError.swift in Sources */,
+				0C4E46512840EA5E00547B34 /* RecommendationsResponse.swift in Sources */,
+				0CA69CD8282A5D53003711EC /* DefaultPass+CoreDataClass.swift in Sources */,
+				0CDDDA6B2823B09E00A6DF6B /* Name.swift in Sources */,
+				0CA69CE1282A62BA003711EC /* Export.swift in Sources */,
+				0C4E46592844B5E600547B34 /* Recommendation+Wrappers.swift in Sources */,
+				0CA69CBD28252DB3003711EC /* DiseaseTarget+CoreDataProperties.swift in Sources */,
+				0CA69CCF282A4FBC003711EC /* PassView.swift in Sources */,
+				0CA69CED282E44AD003711EC /* QRCodeScanable.swift in Sources */,
+				0CDDDA4E2822AD4600A6DF6B /* Base45Coder.swift in Sources */,
+				0CA69CD7282A5D53003711EC /* VaccinationPass+CoreDataProperties.swift in Sources */,
+				0C9BBFEC287ECE34003F5075 /* PassDetail.swift in Sources */,
+				0CDDDA492822AD4600A6DF6B /* ECDSA.swift in Sources */,
+				0C4E46652844CBEA00547B34 /* Vaccination+CoreDataProperties.swift in Sources */,
+				0CDDDA3F2822AD3C00A6DF6B /* CompressionAlgorithm.swift in Sources */,
+				0CA69CF1282E7AD8003711EC /* DataExtension.swift in Sources */,
+				0C91948E28631BCB00B6D60D /* UpdateNetworkController.swift in Sources */,
+				0CA69CD6282A5D53003711EC /* VaccinationPass+CoreDataClass.swift in Sources */,
+				0C65BD302871CA65003408F2 /* RecommendationsNetworkController.swift in Sources */,
+				0CA69CE5282A6AC2003711EC /* RecommendationSettings.swift in Sources */,
+				0CF93375284CAA6800FCE5DB /* DefaultPass+Wrappers.swift in Sources */,
+				0CDDDA6F2823B5D700A6DF6B /* Test.swift in Sources */,
+				0CA69CDF282A613A003711EC /* Settings.swift in Sources */,
+				0CA69CE3282A6A97003711EC /* PassList.swift in Sources */,
+				0C36054928080F350037C978 /* Recommendations.swift in Sources */,
+				0C9BBFEA287ECDE7003F5075 /* PrivacyPolicy.swift in Sources */,
+				0C9F46BF281FD7F100AD2664 /* VaccinationList.swift in Sources */,
+				0CDDDA402822AD3C00A6DF6B /* Compression.swift in Sources */,
+				0C4E464C2840EA0D00547B34 /* APIService.swift in Sources */,
+				0CDDDA412822AD3C00A6DF6B /* DataUnsafeBytesExtension.swift in Sources */,
+				0CDDDA4A2822AD4600A6DF6B /* HCert.swift in Sources */,
+				0CDDDA732823B5E200A6DF6B /* Recovery.swift in Sources */,
+				0C4E46532840EA6E00547B34 /* RecommendationsService.swift in Sources */,
+				0CA69CEF282E772D003711EC /* DiseaseTarget+Wrappers.swift in Sources */,
+				0C9F46BB281FD7CF00AD2664 /* AddVaccination.swift in Sources */,
+				0CDDDA7D2823B6CC00A6DF6B /* String+Prefix.swift in Sources */,
+				0CA69CC128252EE6003711EC /* Vaccination+Wrappers.swift in Sources */,
+				0CA69CE7282E4290003711EC /* String+QRCodeGeneration.swift in Sources */,
+				0C9F46BD281FD7E200AD2664 /* VaccinationDetail.swift in Sources */,
+				0C3E8BD2284A56C600D13740 /* UpdateResponse.swift in Sources */,
+				0CA69CCC28256482003711EC /* Vaccination+CoreDataClass.swift in Sources */,
+				0C36054728080F350037C978 /* VaccinappApp.swift in Sources */,
+				0C9BBFEE287ECE4E003F5075 /* AddPass.swift in Sources */,
+				0C36055328080F380037C978 /* Vaccinapp.xcdatamodeld in Sources */,
+				0C9AD811284CE4BD007A8866 /* Vaccine+CoreDataProperties.swift in Sources */,
+				0CDDDA7B2823B6B600A6DF6B /* BundleExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C36055428080F390037C978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9194922863250000B6D60D /* DiseaseTargetTests.swift in Sources */,
+				0C36055D28080F390037C978 /* VaccinappTests.swift in Sources */,
+				0C91948C28631A7900B6D60D /* NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C36055E28080F390037C978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C36056928080F390037C978 /* VaccinappUITestsLaunchTests.swift in Sources */,
+				0C36056728080F390037C978 /* VaccinappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C36055A28080F390037C978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C36054228080F350037C978 /* Vaccinapp */;
+			targetProxy = 0C36055928080F390037C978 /* PBXContainerItemProxy */;
+		};
+		0C36056428080F390037C978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C36054228080F350037C978 /* Vaccinapp */;
+			targetProxy = 0C36056328080F390037C978 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C36056A28080F390037C978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C36056B28080F390037C978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C36056D28080F390037C978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vaccinapp/Preview Content\"";
+				DEVELOPMENT_TEAM = G6R66D2229;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vaccinapp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "QR Code Scanning";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veerkamp.Vaccinapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C36056E28080F390037C978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vaccinapp/Preview Content\"";
+				DEVELOPMENT_TEAM = G6R66D2229;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vaccinapp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "QR Code Scanning";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veerkamp.Vaccinapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C36057028080F390037C978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6R66D2229;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veerkamp.VaccinappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vaccinapp.app/Vaccinapp";
+			};
+			name = Debug;
+		};
+		0C36057128080F390037C978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6R66D2229;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veerkamp.VaccinappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vaccinapp.app/Vaccinapp";
+			};
+			name = Release;
+		};
+		0C36057328080F390037C978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6R66D2229;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veerkamp.VaccinappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vaccinapp;
+			};
+			name = Debug;
+		};
+		0C36057428080F390037C978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6R66D2229;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veerkamp.VaccinappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vaccinapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C36053E28080F350037C978 /* Build configuration list for PBXProject "Vaccinapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C36056A28080F390037C978 /* Debug */,
+				0C36056B28080F390037C978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C36056C28080F390037C978 /* Build configuration list for PBXNativeTarget "Vaccinapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C36056D28080F390037C978 /* Debug */,
+				0C36056E28080F390037C978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C36056F28080F390037C978 /* Build configuration list for PBXNativeTarget "VaccinappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C36057028080F390037C978 /* Debug */,
+				0C36057128080F390037C978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C36057228080F390037C978 /* Build configuration list for PBXNativeTarget "VaccinappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C36057328080F390037C978 /* Debug */,
+				0C36057428080F390037C978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C2B631C2816B0550090DA2A /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		0CA92AE52822AA82006A088B /* XCRemoteSwiftPackageReference "ASN1Decoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/filom/ASN1Decoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		0CF741322816C60700DA5E80 /* XCRemoteSwiftPackageReference "base45-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ehn-dcc-development/base45-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		0CF741372816EFA400DA5E80 /* XCRemoteSwiftPackageReference "SwiftCBOR" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/unrelentingtech/SwiftCBOR";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C2B631D2816B0560090DA2A /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C2B631C2816B0550090DA2A /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		0CA92AE62822AA82006A088B /* ASN1Decoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CA92AE52822AA82006A088B /* XCRemoteSwiftPackageReference "ASN1Decoder" */;
+			productName = ASN1Decoder;
+		};
+		0CF741332816C60700DA5E80 /* base45-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CF741322816C60700DA5E80 /* XCRemoteSwiftPackageReference "base45-swift" */;
+			productName = "base45-swift";
+		};
+		0CF741382816EFA400DA5E80 /* SwiftCBOR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CF741372816EFA400DA5E80 /* XCRemoteSwiftPackageReference "SwiftCBOR" */;
+			productName = SwiftCBOR;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0C36055128080F380037C978 /* Vaccinapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0C36055228080F380037C978 /* Vaccinapp.xcdatamodel */,
+			);
+			currentVersion = 0C36055228080F380037C978 /* Vaccinapp.xcdatamodel */;
+			path = Vaccinapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0C36053B28080F350037C978 /* Project object */;
+}
